@@ -7,7 +7,7 @@
     {
       "id": "what-is-ponytail",
       "title": "The Lazy Senior Dev",
-      "description": "Ponytail installs a lazy senior dev into your AI agent. It enforces a 6-rung decision ladder—question need, standard-lib, platform features, existing deps, one-liner—before writing custom code. Result: 80 to 94% less code, 3 to 6x faster, 47 to 77% cheaper.",
+      "description": "Ponytail installs a lazy senior dev into your AI agent. It enforces a 6-rung decision ladder—question need, standard-lib, platform features, existing deps, one-liner—before writing custom code. Result: 80 to 94% less code, 3 to 6 times faster, 47 to 77% cheaper.",
       "focusDirectory": "",
       "colorMode": "fileTypes"
     },
