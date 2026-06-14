@@ -14,7 +14,7 @@
     {
       "id": "skill-rules",
       "title": "The Six-Rung Ladder",
-      "description": "skills/ponytail/SKILL.md is the rule engine—the 6-rung ladder injected every response. Three modes: lite (suggest lazier alt), full (enforce, default), ultra (YAGNI extremist). Companion skills cover /ponytail-review, /ponytail-audit, /ponytail-help.",
+      "description": "skills/ponytail/SKILL.md is the rule engine—the 6-rung ladder injected every response. Three modes: lite (suggest lazier alt), full (enforce default), ultra (YAGNI extremist). Companion skills cover /ponytail-review, /ponytail-audit, /ponytail-help.",
       "focusDirectory": "skills",
       "colorMode": "fileTypes",
       "highlightLayers": [
