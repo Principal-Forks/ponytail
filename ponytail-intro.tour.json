@@ -1,0 +1,136 @@
+{
+  "id": "ponytail-intro",
+  "title": "Ponytail: The Lazy Senior Dev",
+  "description": "How ponytail installs a lazy senior dev mindset into any AI coding agent",
+  "version": "1.0.0",
+  "steps": [
+    {
+      "id": "what-is-ponytail",
+      "title": "The Lazy Senior Dev",
+      "description": "Ponytail installs a lazy senior dev into your AI agent. It enforces a 6-rung decision ladder—question need, stdlib, platform features, existing deps, one-liner—before writing custom code. Result: 80-94% less code, 3-6× faster, 47-77% cheaper.",
+      "focusDirectory": "",
+      "colorMode": "fileTypes"
+    },
+    {
+      "id": "skill-rules",
+      "title": "The Six-Rung Ladder",
+      "description": "skills/ponytail/SKILL.md is the rule engine—the 6-rung ladder injected every response. Three modes: lite (suggest lazier alt), full (enforce, default), ultra (YAGNI extremist). Companion skills cover /ponytail-review, /ponytail-audit, /ponytail-help.",
+      "focusDirectory": "skills",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "core-skill",
+          "name": "Core Rules",
+          "color": "#3b82f6",
+          "items": [
+            { "path": "skills/ponytail/SKILL.md", "type": "file" }
+          ],
+          "opacity": 0.8,
+          "renderStrategy": "border"
+        },
+        {
+          "id": "companion-skills",
+          "name": "Companion Skills",
+          "color": "#8b5cf6",
+          "items": [
+            { "path": "skills/ponytail-review/SKILL.md", "type": "file" },
+            { "path": "skills/ponytail-audit/SKILL.md", "type": "file" },
+            { "path": "skills/ponytail-help/SKILL.md", "type": "file" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "hooks-runtime",
+      "title": "Session Lifecycle Hooks",
+      "description": "hooks/ is the runtime engine. hooks.json registers two lifecycle events: SessionStart injects the mode's rules; UserPromptSubmit tracks mode switches. ponytail-instructions.js reads SKILL.md and filters rules to the active intensity level.",
+      "focusDirectory": "hooks",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "hook-registry",
+          "name": "Hook Registry",
+          "color": "#f59e0b",
+          "items": [
+            { "path": "hooks/hooks.json", "type": "file" }
+          ],
+          "opacity": 0.9,
+          "renderStrategy": "border"
+        },
+        {
+          "id": "hook-scripts",
+          "name": "Hook Scripts",
+          "color": "#10b981",
+          "items": [
+            { "path": "hooks/ponytail-activate.js", "type": "file" },
+            { "path": "hooks/ponytail-mode-tracker.js", "type": "file" },
+            { "path": "hooks/ponytail-instructions.js", "type": "file" },
+            { "path": "hooks/ponytail-runtime.js", "type": "file" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "platform-adapters",
+      "title": "Multi-Platform Adapters",
+      "description": "Each platform gets a thin adapter wiring hooks/ and skills/ into its plugin system. .claude-plugin/ and .codex-plugin/ use plugin.json; gemini-extension.json hooks Gemini CLI; pi-extension/ is an ESM bridge; .opencode/ adds a .mjs plugin.",
+      "focusDirectory": "",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "plugin-adapters",
+          "name": "Platform Adapters",
+          "color": "#ef4444",
+          "items": [
+            { "path": ".claude-plugin", "type": "directory" },
+            { "path": ".codex-plugin", "type": "directory" },
+            { "path": "gemini-extension.json", "type": "file" },
+            { "path": ".opencode", "type": "directory" },
+            { "path": "pi-extension", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ]
+    },
+    {
+      "id": "static-rules-and-benchmarks",
+      "title": "Static Rules & Benchmarks",
+      "description": "Agents without plugin support (Cursor, Windsurf, Cline, Copilot, Kiro) get static rule copies. scripts/check-rule-copies.js verifies they stay in sync. benchmarks/ holds a promptfoo eval suite that proved the 80-94% code-reduction claim.",
+      "focusDirectory": "",
+      "colorMode": "fileTypes",
+      "highlightLayers": [
+        {
+          "id": "static-rules",
+          "name": "Static Rule Copies",
+          "color": "#6366f1",
+          "items": [
+            { "path": ".cursor", "type": "directory" },
+            { "path": ".windsurf", "type": "directory" },
+            { "path": ".clinerules", "type": "directory" },
+            { "path": ".github", "type": "directory" },
+            { "path": "AGENTS.md", "type": "file" },
+            { "path": ".kiro", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        },
+        {
+          "id": "verification",
+          "name": "Sync Check & Benchmarks",
+          "color": "#f59e0b",
+          "items": [
+            { "path": "scripts", "type": "directory" },
+            { "path": "benchmarks", "type": "directory" }
+          ],
+          "opacity": 0.7,
+          "renderStrategy": "border"
+        }
+      ]
+    }
+  ]
+}
