@@ -77,7 +77,7 @@
     {
       "id": "platform-adapters",
       "title": "Multi-Platform Adapters",
-      "description": "Each platform gets a thin adapter wiring hooks/ and skills/ into its plugin system. .claude-plugin/ and .codex-plugin/ use plugin.json; gemini-extension.json hooks Gemini CLI; pi-extension/ is an ESM bridge; .opencode/ adds a .mjs plugin.",
+      "description": "Each platform gets a thin adapter wiring hooks/ and skills/ into its plugin system. claude-plugin/ and codex-plugin/ use plugin.json; gemini-extension.json hooks Gemini CLI; pi-extension/ is an ESM bridge; opencode/ adds a .mjs plugin.",
       "focusDirectory": "",
       "colorMode": "fileTypes",
       "highlightLayers": [
