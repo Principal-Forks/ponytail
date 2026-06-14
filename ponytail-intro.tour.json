@@ -100,7 +100,7 @@
     {
       "id": "static-rules-and-benchmarks",
       "title": "Static Rules & Benchmarks",
-      "description": "Agents without plugin support (Cursor, Windsurf, Cline, Copilot, Kiro) get static rule copies. scripts/check-rule-copies.js verifies they stay in sync. benchmarks/ holds a promptfoo eval suite that proved the 80-94% code-reduction claim.",
+      "description": "Agents without plugin support (Cursor, Windsurf, Cline, Copilot, Kiro) get static rule copies. scripts/check-rule-copies.js verifies they stay in sync. benchmarks/ holds a promptfoo eval suite that proved the 80 to 94% code-reduction claim.",
       "focusDirectory": "",
       "colorMode": "fileTypes",
       "highlightLayers": [
